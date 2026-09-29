@@ -22,5 +22,5 @@ main = do
     let bijgewerkteTabel2 = afstandBijwerken 'C' 5 bijgewerkteTabel1
     -- Hier maak ik gebruik van let om de bijwerkingen op te slaan.
 
-    print (bijgewerkteTabel1)s
+    print (bijgewerkteTabel1)
     print (bijgewerkteTabel2)

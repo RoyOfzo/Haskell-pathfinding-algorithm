@@ -15,6 +15,7 @@ Toelichting over Haskell:
 - http://www.zvon.org/other/haskell/Outputprelude/lookup_f.html
 - https://stackoverflow.com/questions/18808258/what-does-the-just-syntax-mean-in-haskell
 - https://stackoverflow.com/questions/59018532/using-map-in-haskell
+- https://zvon.org/other/haskell/Outputprelude/elem_f.html
 
 
 Info over Dijkstra's algoritme:
