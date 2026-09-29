@@ -1,0 +1,12 @@
+-- Aanmaken van een graaf in Haskell
+
+graph = [
+    ('A', 'B', 2),
+    ('A', 'C', 5),
+    ('B', 'C', 1),
+    ('B', 'D', 3),
+    ('C', 'D', 2) ]
+
+main :: IO ()
+main = do
+    print (graph)

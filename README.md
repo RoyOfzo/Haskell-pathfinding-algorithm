@@ -7,6 +7,15 @@ The project made for the Paradigma challenge which is a part of the APP course
 Poging tot uitvogelen hoe ik een graph kan representeren in Haskell:
 - https://stackoverflow.com/questions/9732084/how-do-you-represent-a-graph-in-haskell
 
+Toelichting over Haskell:
+- https://github.com/wasp-lang/haskell-handbook
+- https://wiki.haskell.org/index.php?title=Currying
+- http://www.zvon.org/other/haskell/Outputprelude/minimum_f.html
+- https://stackoverflow.com/questions/8712208/how-do-i-use-the-filter-function-in-haskell
+- http://www.zvon.org/other/haskell/Outputprelude/lookup_f.html
+- https://stackoverflow.com/questions/18808258/what-does-the-just-syntax-mean-in-haskell
+- https://stackoverflow.com/questions/59018532/using-map-in-haskell
+
 
 Info over Dijkstra's algoritme:
 - https://acatalepsie.fr/posts/haskell-dijkstra.html
