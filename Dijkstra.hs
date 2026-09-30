@@ -32,14 +32,15 @@ relaxBuren node afstanden graaf =
 -- Ik heb ook expres gekozen voor foldl' in plaats van foldl. foldl' is strikt en foldl is lui en maakt 'grote thunks', wat voor een stack overflow kan leiden bij grote lijsten.
 
 -- De dijkstra-functie berekent de kortste afstand vanaf een startNode ...
-dijkstra :: Node -> Graaf -> [(Node, Weight)]
-dijkstra startNode graaf = verwerk (eersteAfstanden startNode graaf) []
+dijkstra :: Node -> Node -> Graaf -> [(Node, Weight)]
+dijkstra startNode eindNode graaf = 
+    verwerk (eersteAfstanden startNode graaf) []
     where
         verwerk afstanden bezocht
-            | null onbezocht = afstanden        -- Geen onbezochte nodes meer
-            | afstand == oneindig = afstanden   -- Als de kleinste afstand oneindig is, zijn er geen andere mogelijke opties meer
-            | otherwise =                       -- Wanneer er nog wel mogelijke nodes zijn
-                verwerk nieuweAfstanden (node : bezocht)
+            | null onbezocht = afstanden                            -- Geen onbezochte nodes meer
+            | node == eindNode = afstanden                          -- Als de eindNode is bereikt
+            | afstand == oneindig = afstanden                       -- Als de kleinste afstand oneindig is, zijn er geen andere mogelijke opties meer
+            | otherwise = verwerk nieuweAfstanden (node : bezocht)  -- Wanneer er nog wel mogelijke nodes zijn
             where
                 onbezocht = filter (\regel -> fst regel `notElem` bezocht) afstanden 
                 (node, afstand) = vindKleinsteAfstand onbezocht
@@ -50,6 +51,6 @@ dijkstra startNode graaf = verwerk (eersteAfstanden startNode graaf) []
 
 main :: IO ()
 main = do
-    print (dijkstra 'A' graaf)
+    print (getAfstand 'B' (dijkstra 'A' 'B' graaf))
 
  
