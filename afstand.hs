@@ -1,6 +1,9 @@
 -- Deze module bevat functies voor het lezen en het bijwerken van afstanden in een tabel.
-module Afstand (getAfstand, vindKleinsteAfstand, afstandBijwerken) where
+module Afstand where
 
+import Graaf (Node, Weight)
+
+-- Haalt de afstand van een node uit de afstandentabel.
 getAfstand :: Node -> [(Node, Weight)] -> Weight
 getAfstand node afstandTabel = 
     case lookup node afstandTabel of 

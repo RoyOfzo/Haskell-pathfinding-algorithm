@@ -18,6 +18,7 @@ Toelichting over Haskell:
 - https://zvon.org/other/haskell/Outputprelude/elem_f.html
 - http://www.zvon.org/other/haskell/Outputlist/nub_f.html
 - https://www.haskell.org/tutorial/modules.html
+- https://wiki.haskell.org/Programming_guidelines (naming conventions)
 
 
 Info over Dijkstra's algoritme:
