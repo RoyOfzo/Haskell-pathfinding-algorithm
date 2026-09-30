@@ -5,8 +5,8 @@ import Graaf (Node, Weight)
 
 -- Haalt de afstand van een node uit de afstandentabel.
 getAfstand :: Node -> [(Node, Weight)] -> Weight
-getAfstand node afstandTabel = 
-    case lookup node afstandTabel of 
+getAfstand node afstanden = 
+    case lookup node afstanden of 
         Nothing -> error "Node niet gevonden"
         Just afstand -> afstand
 

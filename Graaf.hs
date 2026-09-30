@@ -1,12 +1,14 @@
 module Graaf where
 
+import Data.List (nub)
+
 -- Ik heb gekozen om hier aliases te gebruiken, om de code meer leesbaar te maken. 
 -- Daarnaast heb ik de graaf termen (zoals node en weight) in het Engels gelaten.
 type Node = Char
 type Weight = Int
 type Graaf = [(Node, Node, Weight)]
 
-
+graaf :: Graaf
 graaf = [
         ('A', 'B', 2),
         ('A', 'C', 5),

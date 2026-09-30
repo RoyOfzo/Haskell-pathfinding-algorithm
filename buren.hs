@@ -7,8 +7,8 @@ import Graaf (Graaf, Node, Weight)
 -- Deze functie is erg vergelijkbaar met die uit mijn oefening, maar krijgt nu een graaf mee.
 buren :: Graaf -> Node -> [(Node, Weight)]
 buren graaf node = [
-                    (neighbour, weight) |
-                    (afkomst, neighbour, weight) <- graaf,
+                    (buurman, weight) |
+                    (afkomst, buurman, weight) <- graaf,
                      afkomst == node]
 
 isBezocht :: Node -> [Node] -> Bool
@@ -16,5 +16,5 @@ isBezocht node bezochteNodes = node `elem` bezochteNodes
 
 -- Relax is een pure functie die de kortste afstand teruggeeft.
 relax :: Weight -> Weight -> Weight -> Weight
-relax huidigeAfstand edgeGewicht oudeAfstand =
-    min (huidigeAfstand + edgeGewicht) oudeAfstand
+relax currentDistance edgeWeight oldDistance =
+    min (currentDistance + edgeWeight) oldDistance
