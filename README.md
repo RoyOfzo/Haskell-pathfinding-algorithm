@@ -16,10 +16,13 @@ Toelichting over Haskell:
 - https://stackoverflow.com/questions/18808258/what-does-the-just-syntax-mean-in-haskell
 - https://stackoverflow.com/questions/59018532/using-map-in-haskell
 - https://zvon.org/other/haskell/Outputprelude/elem_f.html
+- http://www.zvon.org/other/haskell/Outputprelude/notElem_f.html
 - http://www.zvon.org/other/haskell/Outputlist/nub_f.html
 - https://www.haskell.org/tutorial/modules.html
 - https://wiki.haskell.org/Programming_guidelines (naming conventions)
 - https://zenn.dev/sigma_tom/articles/566e68f844cd4f?locale=en
+- https://stackoverflow.com/questions/52705485/what-does-the-in-keyword-do-in-haskell
+- http://www.zvon.org/other/haskell/Outputprelude/fst_f.html
 
 
 Info over Dijkstra's algoritme:
