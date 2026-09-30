@@ -22,5 +22,6 @@ Info over Dijkstra's algoritme:
 - https://acatalepsie.fr/posts/haskell-dijkstra.html
 - https://www.geeksforgeeks.org/dsa/dijkstras-shortest-path-algorithm-greedy-algo-7/
 - https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php met animatie
+- https://www.baeldung.com/cs/dijkstra-edge-relaxation
 
 
