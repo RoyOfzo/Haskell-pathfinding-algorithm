@@ -1,6 +1,6 @@
-module Graaf where
+module Graaf ( graaf ) where
 
-graph = [
+graaf = [
     ('A', 'B', 2),
     ('A', 'C', 5),
     ('B', 'C', 1),
