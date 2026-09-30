@@ -19,6 +19,7 @@ Toelichting over Haskell:
 - http://www.zvon.org/other/haskell/Outputlist/nub_f.html
 - https://www.haskell.org/tutorial/modules.html
 - https://wiki.haskell.org/Programming_guidelines (naming conventions)
+- https://zenn.dev/sigma_tom/articles/566e68f844cd4f?locale=en
 
 
 Info over Dijkstra's algoritme:

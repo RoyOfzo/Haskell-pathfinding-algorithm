@@ -28,4 +28,3 @@ afstandBijwerken node afstand afstandTabel =
         Just ha -> map (\(n, a) -> if n == node then (n, afstand) else (n, a)) afstandTabel
 -- Ik heb hier gekozen om afkortingen te gebruiken voor de variabelen, omdat de regel anders te groot wordt.
 -- a = afstand, n = node en ha = huidige afstand, maar wordt niet gebruikt. Soms komt het voor dat een underscore (_) wordt gebruikt voor ongebruikte variabelen, maar ik kan niet iets concreets vinden of dit ook echt geaccepteerd is in de Haskell best practices.
-
