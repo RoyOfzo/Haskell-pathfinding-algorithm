@@ -1,7 +1,7 @@
 -- Deze module bevat functies voor het lezen en het bijwerken van afstanden in een tabel.
 module Afstand where
 
-import Graaf (Node, Weight)
+import Graaf
 
 -- Haalt de afstand van een node uit de afstandentabel.
 getAfstand :: Node -> [(Node, Weight)] -> Weight
@@ -24,7 +24,7 @@ vindKleinsteAfstand ((node, afstand) : xs) =
 afstandBijwerken :: Node -> Weight -> [(Node, Weight)] -> [(Node, Weight)]
 afstandBijwerken node afstand afstandTabel =
     case lookup node afstandTabel of 
-        Nothing -> error "Node niet gevonden"
-        Just ha -> map (\(n, a) -> if n == node then (n, afstand) else (n, a)) afstandTabel
+         Nothing -> error "Node niet gevonden"
+         Just ha -> map (\(n, a) -> if n == node then (n, afstand) else (n, a)) afstandTabel
 -- Ik heb hier gekozen om afkortingen te gebruiken voor de variabelen, omdat de regel anders te groot wordt.
 -- a = afstand, n = node en ha = huidige afstand, maar wordt niet gebruikt. Soms komt het voor dat een underscore (_) wordt gebruikt voor ongebruikte variabelen, maar ik kan niet iets concreets vinden of dit ook echt geaccepteerd is in de Haskell best practices.

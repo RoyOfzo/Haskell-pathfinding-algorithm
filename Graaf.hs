@@ -14,9 +14,24 @@ graaf = [
         ('A', 'C', 5),
         ('B', 'C', 1),
         ('B', 'D', 3),
+        ('B', 'E', 4),
         ('C', 'D', 2),
+        ('C', 'E', 3),
         ('D', 'E', 1),
-        ('E', 'F', 2) ]
+        ('E', 'F', 2),
+        ('D', 'F', 1),
+        ('B', 'D', 1) ]
+
+--     ('A', 'B', 2),
+--     ('A', 'C', 5),
+--     ('B', 'C', 1),
+--     ('B', 'D', 3),
+--     ('B', 'E', 4),
+--     ('C', 'D', 2),
+--     ('C', 'E', 3),
+--     ('D', 'E', 1),
+--     ('D', 'F', 6),
+--     ('E', 'F', 2)
 
 -- Haalt alle unieke nodes uit de graaf en geeft deze terug als een lijst.
 -- Dit is ook meteen wat nub doet, het haalt alle dubbele nodes uit de lijst.

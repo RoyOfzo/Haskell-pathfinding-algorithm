@@ -48,9 +48,20 @@ dijkstra startNode eindNode graaf =
 -- notElem wordt hier gebruikt om te controleren of de node al in de lijst van bezochte nodes zit.
 -- fst wordt gebruikt om de eerste waarde van een node te krijgen.
 
-
+-- Berekent de route door vanaf de doel node terug te rekenen naar de start node
+route :: Node -> Node -> Graaf -> [Node]
+route startNode eindNode graaf = reverse (vindPad eindNode)                     -- De reverse functie wordt hier gebruikt om de route van start naar eind te weergeven
+  where
+    afstanden = dijkstra startNode eindNode graaf
+    vindPad node
+      | node == startNode = [startNode]                                         -- Als deze de start node is, dan is het compleet
+      | otherwise =                                                             -- Als het niet de start node is...
+          case [ afkomst | (afkomst, doel, gewicht) <- graaf, doel == node,     -- ...Dan wordt hier gekeken welke node overeenkomt met de afkomst, doel en gewicht. 
+                getAfstand afkomst afstanden + gewicht == getAfstand node afstanden ] of 
+                (ouder:_) -> node : vindPad ouder                               -- De eerste :_ wordt gebruikt om alleen de eerste item van de lijst te pakken en de rest te negeren
+                [] -> error "Geen pad gevonden"                                 -- ^ De tweede : wordt gebruikt om de node toe te voegen aan de lijst, maar omdat hier node ervoor moet staan, wordt de lijst van eind naar start opgebouwd.
+        
 main :: IO ()
 main = do
-    print (getAfstand 'B' (dijkstra 'A' 'B' graaf))
-
- 
+    print (route 'A' 'F' graaf)
+    print (getAfstand 'F' (dijkstra 'A' 'F' graaf))

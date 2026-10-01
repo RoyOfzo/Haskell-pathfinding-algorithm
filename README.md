@@ -23,6 +23,8 @@ Toelichting over Haskell:
 - https://zenn.dev/sigma_tom/articles/566e68f844cd4f?locale=en
 - https://stackoverflow.com/questions/52705485/what-does-the-in-keyword-do-in-haskell
 - http://www.zvon.org/other/haskell/Outputprelude/fst_f.html
+- https://www.haskelltutorials.com/guides/haskell-lists-ultimate-guide.html#:~:text=Colon%20operator%3A%20This%20is%20very%20similar%20to%20the%20cons%20function%20from%20Lisp%2Dlike%20languages%2E%20It%20adds%20a%20single%20element%20to%20the%20beginning%20of%20a%20list%20%28and%20returns%20a%20new%20list%29%2E
+- https://zvon.org/other/haskell/Outputprelude/reverse_f.html
 
 
 Info over Dijkstra's algoritme:

@@ -1,7 +1,7 @@
 -- Deze module is verantwoordelijk voor buren en het 'relaxen' van edges.
 module Buren where
 
-import Graaf (Graaf, Node, Weight)
+import Graaf
 
 -- Dit is een pure functie die de buren van een node teruggeeft, gepaard met de gewichten.
 -- Deze functie is erg vergelijkbaar met die uit mijn oefening, maar krijgt nu een graaf mee.
