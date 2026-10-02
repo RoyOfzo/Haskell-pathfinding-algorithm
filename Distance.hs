@@ -1,4 +1,4 @@
--- Deze module bevat functies voor het lezen en het bijwerken van afstanden in een tabel.
+-- Deze module bevat functies voor het lezen en het 'bijwerken' van de afstandentabel.
 module Distance where
 
 import Graph
@@ -25,6 +25,7 @@ updateDistance :: Node -> Weight -> [(Node, Weight)] -> [(Node, Weight)]
 updateDistance node distance distanceTable =
     case lookup node distanceTable of 
          Nothing -> error "Node not found"
-         Just currentDistance -> map (\(currentNode, currentWeight) -> if currentNode == node then (currentNode, distance) else (currentNode, currentWeight)) distanceTable
+         Just cd -> map (\(n, d) -> if n == node then (n, distance) else (n, d)) distanceTable
 -- Ik heb hier gekozen om afkortingen te gebruiken voor de variabelen, omdat de regel anders te groot wordt.
--- a = afstand, n = node en ha = huidige afstand, maar wordt niet gebruikt. Soms komt het voor dat een underscore (_) wordt gebruikt voor ongebruikte variabelen, maar ik kan niet iets concreets vinden of dit ook echt geaccepteerd is in de Haskell best practices.
+-- d = afstand, n = huidige node en cd = huidige afstand, maar wordt niet gebruikt. Soms komt het voor dat een underscore (_) wordt gebruikt voor ongebruikte variabelen
+-- maar ik kan niet iets concreets vinden of dit ook echt geaccepteerd is in de Haskell best practices.

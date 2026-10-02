@@ -1,3 +1,4 @@
+-- Deze module bevat de definitie van een graaf en een graaf die voorbeeld geeft van de zwakte van mijn algoritme.
 module Graph where
 
 import Data.List (nub)
@@ -21,6 +22,7 @@ graph = [
         ('D', 'F', 1),
         ('B', 'D', 1) ]
 
+-- Dit is een voorbeeld van een graaf die de zwakte van mijn algoritme laat zien. Het algoritme kiest de kortste afstand, maar als er meerdere paden zijn met dezelfde afstand, kiest die het eerste pad.
 --     ('A', 'B', 2),
 --     ('A', 'C', 5),
 --     ('B', 'C', 1),
