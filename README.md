@@ -1,13 +1,28 @@
 # Haskell-pathfinding-algorithm
 The project made for the Paradigma challenge which is a part of the APP course
 
+# Deployment
 
-# Bronnen
+## Requirements
 
-Poging tot uitvogelen hoe ik een graph kan representeren in Haskell:
+- Visual studio code
+- Haskell extension for Visual Studio Code
+- GHCUP https://www.haskell.org/ghcup/ 
+
+## Run
+
+1. Open the terminal
+2. Use cd to navigate to the project folder 
+3. Run the following command to run the project:
+   ```
+   runghc dijkstra.hs
+   ```
+
+# Sources
+
+
+## Haskell:
 - https://stackoverflow.com/questions/9732084/how-do-you-represent-a-graph-in-haskell
-
-Toelichting over Haskell:
 - https://github.com/wasp-lang/haskell-handbook
 - https://wiki.haskell.org/index.php?title=Currying
 - http://www.zvon.org/other/haskell/Outputprelude/minimum_f.html
@@ -27,7 +42,7 @@ Toelichting over Haskell:
 - https://zvon.org/other/haskell/Outputprelude/reverse_f.html
 
 
-Info over Dijkstra's algoritme:
+## Dijkstra's algorithm:
 - https://acatalepsie.fr/posts/haskell-dijkstra.html
 - https://www.geeksforgeeks.org/dsa/dijkstras-shortest-path-algorithm-greedy-algo-7/
 - https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php met animatie

@@ -1,0 +1,164 @@
+commit fc3ae4c32529f8233dd60e8a2b95fa91989e881c
+Author: Roy Witteveen <63068712+RoyOfzo@users.noreply.github.com>
+Date:   Fri Oct 2 17:29:55 2026 +0200
+
+    changed some comments again
+
+commit 477ab8ab4b7e7349501db70f33746e70cff2b179
+Author: Roy Witteveen <63068712+RoyOfzo@users.noreply.github.com>
+Date:   Fri Oct 2 16:52:25 2026 +0200
+
+    changed some commented text
+
+commit 653a3839e6616c977413f5c62d7be72cd1e6e29c
+Author: Roy Witteveen <63068712+RoyOfzo@users.noreply.github.com>
+Date:   Fri Oct 2 16:24:28 2026 +0200
+
+    Forgot to remove irrelevant comment
+    
+    Since changing to English, this is no longer relevant
+
+commit 33e1cece9108ae03d070706d59c171cfcc1c1af8
+Author: Roy Witteveen <63068712+RoyOfzo@users.noreply.github.com>
+Date:   Fri Oct 2 16:23:05 2026 +0200
+
+    Commiting misplaced folder
+    
+    in last commit I said something about backup of original Dutch code. I put it in the folder above the repo so it didn't get commited
+
+commit 21c0d8420fb3694068444e40f753bb52c41be025
+Author: Roy Witteveen <63068712+RoyOfzo@users.noreply.github.com>
+Date:   Fri Oct 2 16:21:17 2026 +0200
+
+    Changed language, moved files and deleted
+    
+    - Changed code to English since this is nicer to look at
+    - Made backup of Dutch code if somehow still needed
+    - deleted unneeded files, I haven't looked at nor used pseudocode.md and additie.hs doesn't add anything new
+
+commit 5003dd87a19bc7a7932f271586fb2985d1012833
+Author: Roy Witteveen <63068712+RoyOfzo@users.noreply.github.com>
+Date:   Fri Oct 2 15:30:39 2026 +0200
+
+    Added a proper description for the Dijkstra function inside dijkstra.hs
+
+commit 86fec82d972518f114fa39dcd98a5577bfc27052
+Author: Roy Witteveen <63068712+RoyOfzo@users.noreply.github.com>
+Date:   Thu Oct 1 12:06:06 2026 +0200
+
+    Made dijkstra functional and more
+    
+    - Added a route function that builds the path for the user to see (since it initially exclusively showed the total weight of the taken path)
+    - Added more sources
+    - Cleaned up some of the other code
+
+commit ced342ac57787358a866f1c04f5d88e21c8b479d
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 16:28:52 2026 +0200
+
+    Version with destination
+    
+    Now doesn't show the route
+
+commit f7988537a3a166c05ffe80bc89324af48ff3c940
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 15:27:17 2026 +0200
+
+    Made a working pathfinding algorithm
+    
+    it still is missing a way to go to a certain node though
+
+commit fe39f0a5238b2e6fa95a649c6070c30de8774bf6
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 14:36:11 2026 +0200
+
+    Made function to relax neighbours
+    
+    FINALLY!!!!
+    Also fixed unneeded whitespaces
+
+commit dfdf03d94a48ea4f31865b66c8f64eb1533a26a9
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 13:33:09 2026 +0200
+
+    Fixed typo's and added type to graph
+
+commit e95f7f3ba16663d7a5a15b36f73d270965c13887
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 13:02:17 2026 +0200
+
+    Forgot to commit Buren module in last commit
+
+commit 6b1f745dd81a9001d9dcdc814e1aaf0dc448a7f5
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 13:01:16 2026 +0200
+
+    Implemented the graaf module and more
+    
+    - Implemented the graaf module
+    - Renamed files to capital letters
+    - Started the dijkstra algorithm
+
+commit fd50917bd51a74c4bcb88df81e57bfa3f786fb53
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 12:41:51 2026 +0200
+
+    Made functionality for the afstand module
+
+commit 70ce95b5265cf2fa12412330843434abc6c38f9e
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 10:39:37 2026 +0200
+
+    Exercise functions put in the modules
+    
+    A lot of these functions will most likely be changed or removed
+
+commit aa2297cc16c7cc0a24307c07475458518f434ac8
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 10:21:17 2026 +0200
+
+    Changed project structure
+    
+    - Split up project into modules to start early with a well organised project
+
+commit 6f57e36c7f74edb470291f257a76b50b0ca43ef9
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Wed Sep 30 09:38:12 2026 +0200
+
+    Made another exercise and added another source to the readme
+
+commit 35e880d25d997b967660a56ddfb36d4a67068aaf
+Author: Roy Witteveen <63068712+RoyOfzo@users.noreply.github.com>
+Date:   Tue Sep 29 17:16:45 2026 +0200
+
+    Did another excersize to further my knowledge of Haskell and Dijkstra and fixed accidentally placed 's'
+
+commit 23d3fcd70938e3379e06cd20ac92cce0acbf4519
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Tue Sep 29 16:11:01 2026 +0200
+
+    Excersizes to get to know Haskell and Dijkstra's algorithm
+
+commit 6348b9a6e9c09bdbbb55f9556df596ccb8e5648e
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Tue Sep 29 13:25:57 2026 +0200
+
+    Created pseudocode to aid building the project and added another source to the readme
+
+commit 4af7220a48b9178745273dd26b57fcc4baf49e2f
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Thu Sep 24 10:33:11 2026 +0200
+
+    Some orienting on sources and added main for later use
+
+commit 482a70fdae0a2a131aadcdd8a34b9dd049badfcc
+Author: Roy <rwitteveen83@gmail.com>
+Date:   Tue Sep 15 14:39:38 2026 +0200
+
+    Initial commit, Haskell file
+
+commit 8272e49a41a55d4c5f0d50d7e12905d0ac7f8979
+Author: Roy Witteveen <63068712+RoyOfzo@users.noreply.github.com>
+Date:   Mon Sep 14 13:58:48 2026 +0200
+
+    Initial commit
