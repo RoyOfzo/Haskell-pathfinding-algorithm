@@ -1,4 +1,4 @@
-module Graaf where
+module Graph where
 
 import Data.List (nub)
 
@@ -6,10 +6,10 @@ import Data.List (nub)
 -- Daarnaast heb ik de graaf termen (zoals node en weight) in het Engels gelaten.
 type Node = Char
 type Weight = Int
-type Graaf = [(Node, Node, Weight)]
+type Graph = [(Node, Node, Weight)]
 
-graaf :: Graaf
-graaf = [
+graph :: Graph
+graph = [
         ('A', 'B', 2),
         ('A', 'C', 5),
         ('B', 'C', 1),
@@ -35,5 +35,5 @@ graaf = [
 
 -- Haalt alle unieke nodes uit de graaf en geeft deze terug als een lijst.
 -- Dit is ook meteen wat nub doet, het haalt alle dubbele nodes uit de lijst.
-nodes :: Graaf -> [Node]
-nodes graaf = nub [node | (from, to, _) <- graaf, node <- [from, to]]
+nodes :: Graph -> [Node]
+nodes graph = nub [node | (source, target, _) <- graph, node <- [source, target]]
