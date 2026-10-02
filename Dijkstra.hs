@@ -54,12 +54,13 @@ route startNode endNode graph = reverse (findPath endNode)                     -
   where
         distances = dijkstra startNode endNode graph
         findPath node
-            | node == startNode = [startNode]                                         -- Als deze de start node is, dan is het compleet
-            | otherwise =                                                             -- Als het niet de start node is...
-                    case [ source | (source, target, weight) <- graph, target == node,     -- ...Dan wordt hier gekeken welke node overeenkomt met de afkomst, doel en gewicht. 
+            | node == startNode = [startNode]                                                       -- Als deze de start node is, dan is het compleet
+            | otherwise =                                                                           -- Als het niet de start node is...
+                    case [ source | (source, target, weight) <- graph, target == node,              -- ...Dan wordt hier gekeken welke node overeenkomt met de afkomst, doel en gewicht. 
                                 getDistance source distances + weight == getDistance node distances ] of 
-                                (parent:_) -> node : findPath parent                               -- De eerste :_ wordt gebruikt om alleen de eerste item van de lijst te pakken en de rest te negeren
-                                [] -> error "No path found"                                 -- ^ De tweede : wordt gebruikt om de node toe te voegen aan de lijst, maar omdat hier node ervoor moet staan, wordt de lijst van eind naar start opgebouwd.
+                                (parent:_) -> node : findPath parent                                -- De eerste :_ wordt gebruikt om alleen de eerste item van de lijst te pakken en de rest te negeren
+                            [] -> error "No path found"                                             -- De tweede : wordt gebruikt om de node toe te voegen aan de lijst, maar omdat hier node ervoor moet staan, 
+                                                                                                    -- wordt de lijst van eind naar start opgebouwd.
         
 main :: IO ()
 main = do
