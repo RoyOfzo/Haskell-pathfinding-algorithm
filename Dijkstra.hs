@@ -31,7 +31,7 @@ relaxBuren node afstanden graaf =
 -- foldl' wordt hier gebruikt om de afstandentabel bij te werken voor alle buren van de meegegeven node.
 -- Ik heb ook expres gekozen voor foldl' in plaats van foldl. foldl' is strikt en foldl is lui en maakt 'grote thunks', wat voor een stack overflow kan leiden bij grote lijsten.
 
--- De dijkstra-functie berekent de kortste afstand vanaf een startNode ...
+-- De dijkstra-functie berekent de kortste afstand vanaf een gekozen start node (startNode) naar de gekozen eind node (eindNode)
 dijkstra :: Node -> Node -> Graaf -> [(Node, Weight)]
 dijkstra startNode eindNode graaf = 
     verwerk (eersteAfstanden startNode graaf) []
