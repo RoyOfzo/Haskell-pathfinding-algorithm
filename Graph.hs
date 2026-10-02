@@ -3,7 +3,6 @@ module Graph where
 import Data.List (nub)
 
 -- Ik heb gekozen om hier aliases te gebruiken, om de code meer leesbaar te maken. 
--- Daarnaast heb ik de graaf termen (zoals node en weight) in het Engels gelaten.
 type Node = Char
 type Weight = Int
 type Graph = [(Node, Node, Weight)]
